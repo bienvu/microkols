@@ -1,35 +1,39 @@
 .banner {
   text-align: center;
-  padding: 45px 0 83px;
   overflow: hidden;
-  position: relative;
-  margin-top: 30px;
+  background-color: #F4F7FA;
 
-  @media(min-width: 576px) {
-    padding: 172px 0 83px;
-  }
+  &__inner {
+    padding: 45px 0 83px;
+    margin-top: 30px;
+    position: relative;
 
-  @media(min-width: 768px) {
-    margin-top: 124px;
-  }
+    @media(min-width: 576px) {
+      padding: 172px 0 83px;
+    }
+  
+    @media(min-width: 768px) {
+      margin-top: 124px;
+    }
 
-  &:after {
-    width: 691px;
-    height: 441px;
-    content: '';
-    background: url(../images/banner.png) no-repeat scroll 0 0 transparent;
-    background-position: center center;
-    top: 0;
-    background-size: contain;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    position: absolute;
-    opacity: .2;
-
-    @media(max-width: 767px) {
-      width: calc(100vw - 20px);
-      height: calc(100vw * 441 / 691);
+    &:after {
+      width: 691px;
+      height: 441px;
+      content: '';
+      background: url(../images/banner.png) no-repeat scroll 0 0 transparent;
+      background-position: center center;
+      top: 0;
+      background-size: contain;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      position: absolute;
+      opacity: .2;
+  
+      @media(max-width: 767px) {
+        width: calc(100vw - 20px);
+        height: calc(100vw * 441 / 691);
+      }
     }
   }
 

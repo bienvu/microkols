@@ -11,6 +11,10 @@
     box-shadow: none;
 }
 
+header {
+    background-color: #F4F7FA;
+}
+
 .footer {
     padding: 40px 0 0;
 
@@ -20,7 +24,15 @@
         border-bottom: 1px solid #d9d7d7;
 
         > .row {
-            @media(min-width: 768px) {
+            @media(max-width: 992px) {
+                padding: 0 20px;
+            }
+
+            @media(max-width: 575px) {
+                padding: 0;
+            }
+
+            @media(min-width: 993px) {
                 margin: 0 -20px;
             }
         }

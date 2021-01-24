@@ -1,5 +1,5 @@
 body {
-    background-color: $gray;
+    background-color: #ececec;
     line-height: 1.4;
     font-family: 'Montserrat', sans-serif;
 
@@ -11,7 +11,8 @@ body {
 .layout {
     max-width: 1480px;
     margin: 0 auto;
-    padding: 0 20px;
+    // padding: 0 20px;
+    background-color: $gray;
 
     @media(max-width: 575px) {
         padding: 0 15px;
