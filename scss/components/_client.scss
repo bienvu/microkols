@@ -1,0 +1,49 @@
+.client {
+  text-align: center;
+  background-color: $white;
+  padding: 60px 20px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #404040;
+  }
+
+  &__desc {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 36px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+    @media(max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    li {
+      padding: 0 10px;
+
+      @media(max-width: 767px) {
+        max-width: 150px;
+        margin-bottom: 10px;
+      }
+
+      @media(min-width: 992px) {
+        padding: 0 20px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

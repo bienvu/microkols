@@ -1,0 +1,101 @@
+.creator {
+    color: $orange-light;
+    margin-bottom: 80px;
+
+    @media(min-width: 768px) {
+        margin-bottom: 141px;
+    }
+
+    &__header {
+        max-width: 464px;
+        background-color: #fff;
+        border-radius: 7px 7px 70px 70px;
+        padding-bottom: 7px;
+        border-top: 0;
+        text-align: center;
+        margin: 0 auto;
+        background: linear-gradient(0deg, #FBAB82 -22.19%, #F55907 49.37%);
+        margin-bottom: 73px;
+
+        > div {
+            background-color: $white;
+            padding: 22px 20px 15px;
+            border-radius: 7px 7px 70px 70px;
+            position: relative;
+            top: -1px;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #404040;
+            margin-bottom: 4px;
+        }
+
+        p {
+            color: #9d9c9c;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+        img {
+            max-width: 300px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__desc {
+        font-family: 'Courier Prime', monospace;
+        font-weight: 700;
+        font-size: 20px;
+        color: $orange;
+        max-width: 626px;
+        margin: 0 auto 36px;
+    }
+
+    blockquote {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        text-align: center;
+        padding: 10px 50px;
+        max-width: 645px;
+        margin: 0 auto;
+
+        @media(max-width: 575px) {
+            padding: 10px 35px;
+        }
+
+        &::after,
+        &::before {
+            display: inline-block;
+            content: '';
+            background: url('../images/blockquote.png') no-repeat scroll 0 0 transparent;
+            background-size: 100% auto;
+            width: 55px;
+            height: 44px;
+            position: absolute;
+
+            @media(max-width: 575px) {
+                width: 30px;
+            }
+        }
+
+        &:before {
+            left: 0;
+            top: -10px;
+        }
+
+        &:after {
+            right: 30px;
+            transform: rotate(180deg);
+
+            @media(max-width: 767px) {
+                right: 0;
+            }
+        }
+    }
+}

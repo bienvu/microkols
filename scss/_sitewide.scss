@@ -1,0 +1,59 @@
+// Header style.
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 10px 14px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.footer {
+    padding: 40px 0 0;
+
+    .container {
+        max-width: 810px;
+        margin: 0 auto;
+        border-bottom: 1px solid #d9d7d7;
+
+        > .row {
+            @media(min-width: 768px) {
+                margin: 0 -20px;
+            }
+        }
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #9d9c9c;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding-right: 21px;
+        }
+    }
+
+    &__bottom {
+        font-size: 14px;
+        padding: 24px 0;
+    }
+}

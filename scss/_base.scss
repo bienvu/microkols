@@ -1,0 +1,74 @@
+body {
+    background-color: $gray;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+
+    * {
+        line-height: 1.4;
+    }
+}
+
+.layout {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media(max-width: 575px) {
+        padding: 0 15px;
+    }
+}
+
+.container-small {
+    max-width: 771px;
+    margin: 0 auto;
+}
+
+.container {
+    @media(max-width: 992px) {
+        max-width: inherit;
+        padding: 0;
+    }
+}
+
+
+// Heading
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Courier Prime', monospace;
+}
+
+
+//Button
+.btn {
+    color: $white;
+    border-radius: 4px;
+
+    &:hover {
+        color: $white;
+    }
+}
+.btn-orange {
+    background-color: $orange;
+
+    &:hover {
+        background-color: darken($orange, 0.5);
+    }
+}
+.btn-orange-light {
+    background-color: $orange-light;
+
+    &:hover {
+        background-color: darken($orange-light, 0.5);
+    }
+}
+.btn-blue {
+    background-color: $blue;
+    &:hover {
+        background-color: darken($blue, 0.5);
+    }
+}
+.btn-large {
+    min-width: 125px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+}

@@ -1,0 +1,46 @@
+.submission {
+    background: url('../images/bg-submission.svg') no-repeat scroll 0 0 transparent;
+    background-size: cover;
+    padding: 258px 20px 64px;
+    color: $white;
+    text-align: center;
+
+    @media(max-width: 575px) {
+        background: $orange-ea;
+        padding: 30px 20px 20px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 4%;
+    }
+
+    &__desc {
+        font-size: 16px;
+        margin-bottom: 44px;
+        font-weight: 300;
+    }
+
+    &__content {
+        background-color: $white;
+        color: $orange-light;
+        padding: 40px;
+        max-width: 478px;
+        margin: 0 auto;
+        border-radius: 12px;
+
+        h3 {
+            font-weight: 700;
+            margin-bottom: 9px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 14px;
+            font-weight: 300;
+        }
+    }
+}
