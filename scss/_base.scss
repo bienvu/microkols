@@ -61,6 +61,13 @@ h1,h2,h3,h4,h5,h6 {
         background-color: darken($orange-light, 0.5);
     }
 }
+.btn-blue-light {
+    background-color: $blue-primary;
+
+    &:hover {
+        background-color: darken($blue-primary, 0.5);
+    }
+}
 .btn-blue {
     background-color: $blue;
     &:hover {
@@ -72,4 +79,9 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
     font-weight: 700;
     border-radius: 8px;
+}
+
+.text-blue {
+    color: $blue-primary;
+    font-style: italic;
 }

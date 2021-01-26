@@ -1,0 +1,39 @@
+.blue-skin {
+  .creator__header {
+    background: linear-gradient(0deg, #62B8F4 -22.19%, #0969AD 49.37%);
+  }
+
+  .submission__content,
+  .creator__desc,
+  .creator,
+  .acc {
+    color: $blue-primary;
+  }
+
+  .acc__item h3 {
+    border-color: $blue-primary;
+    background-color: $blue-primary;
+    color: $white;
+    padding-left: 115px;
+  }
+
+  .acc__content .btn {
+    @extend .btn-blue-light;
+  }
+
+  .acc__list > li h3:before {
+    background-color: $blue-primary;
+  }
+
+  .creator blockquote::after, .creator blockquote::before {
+    background-image: url("../images/blockquote-blue.png");
+  }
+
+  .acc__list > li h3:after {
+    background-image: url("../images/bg-number-blue.png");
+  }
+
+  .submission {
+    background-image: url("../images/background-blue.png");
+  }
+}

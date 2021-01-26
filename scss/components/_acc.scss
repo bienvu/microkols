@@ -6,8 +6,15 @@
     margin-bottom: 77px;
   }
 
-  &__title {
+  &__header {
     margin-bottom: 40px;
+
+    @media(min-width: 576px) {
+      margin-bottom: 68px;
+    }
+  }
+
+  &__title {
     font-size: 32px;
     font-family: 'Courier Prime', monospace;
     font-weight: bold;
@@ -16,12 +23,15 @@
 
     @media(min-width: 576px) {
       font-size: 42px;
-      margin-bottom: 68px;
     }
 
     @media(min-width: 768px) {
       font-size: 56px;
     }
+  }
+
+  &__desc {
+    font-style: italic;
   }
 
   &__list {
@@ -121,6 +131,11 @@
     display: inline-block;
     width: 100%;
 
+    p {
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
     .content {
       background-color: $white;
       margin: 0 57px 0 35px;
@@ -170,7 +185,7 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      top: -25px;
+      top: -20px;
       right: 25px;
       border: 5px solid $white;
     }
