@@ -69,3 +69,53 @@ header {
         padding: 24px 0;
     }
 }
+
+.stikybar {
+    position: fixed;
+    right: -132px;
+    transform: rotate(-90deg);
+    top: 250px;
+    z-index: 99;
+
+    a {
+        background-color: $blue;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        padding: 12px 20px;
+        display: inline-block;
+        border-radius: 7px 7px 0 0;
+        min-width: 150px;
+        text-decoration: none;
+        text-align: center;
+
+        & + a {
+            background-color: $orange; 
+        }
+    } 
+
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: $orange;
+    color: $white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    span {
+        text-decoration: none;
+        position: relative;
+        transform: rotate(-90deg);
+        display: inline-block;
+        color: $white;
+        font-size: 16px;
+    }
+}

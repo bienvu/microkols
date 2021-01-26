@@ -15,6 +15,10 @@
     background-color: $blue-primary;
     color: $white;
     padding-left: 115px;
+
+    @media(max-width: 575px) {
+      padding-left: 45px;
+    }
   }
 
   .acc__content .btn {
@@ -35,5 +39,13 @@
 
   .submission {
     background-image: url("../images/background-blue.png");
+
+    @media(max-width: 575px) {
+      background: $blue-primary;
+    }
+  }
+
+  .back-to-top {
+    background: $blue-primary;
   }
 }
